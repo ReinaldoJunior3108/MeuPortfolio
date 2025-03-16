@@ -337,9 +337,10 @@ span {
   }
   .infoservices h4 {
     font-size: 2rem;
+    font-weight: 800;
   }
   .infoservices p {
-    font-size: 1rem;
+    font-size: 15px;
   }
 }
 @media (max-width: 480px){
