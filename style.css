@@ -23,6 +23,7 @@ body {
   background: var(--bg-color);
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 html::-webkit-scrollbar {
   width: 0.8rem;
