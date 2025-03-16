@@ -24,6 +24,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
   overflow-x: hidden;
+  width: 100dvh;
+  height: 100dvh;
 }
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -41,7 +43,7 @@ html::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100dvh;
   padding: 1rem 9%;
   background: rgba(0, 0, 0, 0.7);
   filter: drop-shadow(10px);
@@ -80,7 +82,7 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100dvh;
     padding: 1rem 3%;
     background: #000000;
     border-top: 0.1rem solid var(--main-color);
