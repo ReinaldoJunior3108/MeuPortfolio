@@ -339,6 +339,13 @@ span {
     font-size: 1rem;
   }
 }
+@media (max-width: 480px){
+  .container-servicos{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
 /* educacão */
 .education {
   background: var(--bg-color);
