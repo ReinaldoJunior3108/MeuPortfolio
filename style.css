@@ -495,10 +495,17 @@ span {
   gap:100px;
   
 }
-.nlw p{
-  font-size:1.8rem;
+.project{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
 }
-.project img{
+.nlw p{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.project img, video{
+  max-width:500px;
   border-radius:15px;
   --webkit-animation: glow 2s ease infinite alternate;
   --moz-animation: glow 2s ease infinite alternate;
@@ -521,7 +528,7 @@ span {
   flex-direction:column-reverse;
    
   }
-  .project img{
+  .project img, video{
     max-width:100%;
   }
 }
@@ -532,7 +539,7 @@ span {
   flex-direction:column-reverse;
    
   }
-  .project img{
+  .project img, video{
     max-width:100%;
   }
 }
