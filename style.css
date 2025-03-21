@@ -481,6 +481,10 @@ span {
   .education .right {
     left: 0%;
   }
+  .education h2{
+    position:relative;
+    z-index:1000;
+  }
 }
 /* Projetos */
 
