@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -99,33 +100,7 @@
     <section class="servicos" id="servicos">
       <h2 class="heading">Serviços</h2>
       <div class="container-servicos">
-        <div class="boxservices">
-          <div class="infoservices">
-            <h4>Reparo de Celulares</h4>
-            <p>
-              - Diagnóstico e conserto de smartphones, com especialização em
-              dispositivos Apple (iPhone, iPad).
-            </p>
-          </div>
-        </div>
-        <div class="boxservices">
-          <div class="infoservices">
-            <h4>Reparo de Computadores</h4>
-            <p>
-              - Manutenção e conserto de notebooks e desktops, focando em
-              hardware e software.
-            </p>
-          </div>
-        </div>
-        <div class="boxservices">
-          <div class="infoservices">
-            <h4>reparos em placa geral</h4>
-            <p>
-              - Reparos em placas em geral, com especializado em aparelhos Apple
-            </p>
-          </div>
-        </div>
-        <div class="boxservices">
+        <div class="boxservices card">
           <div class="infoservices">
             <h4>Frontend</h4>
             <p>
@@ -134,13 +109,13 @@
             </p>
           </div>
         </div>
-        <div class="boxservices">
+        <div class="boxservices card">
           <div class="infoservices">
             <h4>backend</h4>
             <p>Em Aprendizado</p>
           </div>
         </div>
-        <div class="boxservices">
+        <div class="boxservices card">
           <div class="infoservices">
             <h4>Full Stack</h4>
             <p>Objetivo</p>
@@ -176,38 +151,43 @@
             </div>
           </div>
         </div>
-
+        <h2 class="heading">Experiência</h2>
         <div class="container left">
           <div class="content">
             <div class="tag">
-              <h3>Especialização Apple</h3>
+              <h3>RJK SHOP</h3>
             </div>
             <div class="decs">
               <p>
-                Curso de Microeletronica e Microsoldagem Apple Nivel 1-2
-                Presencial - Universo Tecnico - Santos Eagle Team - Curitiba
-                Dezembro de 2024
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container right">
-          <div class="content">
-            <div class="tag">
-              <h3>Especialização Apple</h3>
-            </div>
-            <div class="decs">
-              <p>
-                Curso de Microeletronica e Microsoldagem Apple Nivel 1-2
-                Presencial - Universo Tecnico - Santos Eagle Team - Curitiba
-                Dezembro de 2024
+                Tecnico Eletronico, Tecnico de Celular, Desktops, Notebooks etc
+                <br />
+                <br />
+                2019 - Março 2025
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Projetos -->
+
+    <section class="projetos">
+      <h2 class="heading">Meus Projetos</h2>
+      <div class="project-container">
+        <div class="project">
+          <a
+            href="https://reinaldojunior3108.github.io/nlwunite/"
+            target="_blank"
+            ><img src="download.png" alt="screenshot" width="500px"
+          /></a>
+        </div>
+        <div class="nlw">
+          <h2 class="heading">NLW UNITE</h2>
+          <p>Projeto criado na semana NLW-Unite</p>
+        </div>
+      </div>
+    </section>
+
     <!-- contato -->
 
     <section class="contact" id="contato">
@@ -311,6 +291,15 @@
         // Atualiza o valor do input com o número formatado
         input.value = valor;
       }
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 10,
+        speed: 100,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+      });
     </script>
   </body>
 </html>

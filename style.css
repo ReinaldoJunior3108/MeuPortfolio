@@ -277,6 +277,7 @@ span {
 /* serviços */
 .servicos {
   background: var(--bg-color);
+  padding:0 5rem;
 }
 .container-servicos {
   display: grid;
@@ -292,6 +293,7 @@ span {
   cursor: pointer;
   transition: 0.3s ease;
   padding: 2rem;
+  margin-top: 50%;
 }
 .boxservices:hover {
   background: white;
@@ -327,6 +329,11 @@ span {
   .servicos {
     padding-bottom: 7rem;
   }
+  .boxservices{
+    margin-top:initial;
+
+  }
+   
 }
 @media (max-width: 895px) {
   .servicos h2 {
@@ -342,6 +349,10 @@ span {
   .infoservices p {
     font-size: 15px;
   }
+  .boxservices{
+    margin-top:initial;
+  }
+  
 }
 @media (max-width: 480px){
   .container-servicos{
@@ -355,6 +366,11 @@ span {
   .infoservices p{
     font-size: 2rem;
   }
+  .boxservices{
+    margin-top:initial;
+  }
+
+  
 }
 /* educacão */
 .education {
@@ -466,6 +482,58 @@ span {
     left: 0%;
   }
 }
+/* Projetos */
+
+.project-container{
+  padding: 3rem;
+  display: flex;
+  justify-content:center;
+  gap:100px;
+  
+}
+.nlw p{
+  font-size:1.8rem;
+}
+.project img{
+  border-radius:15px;
+  --webkit-animation: glow 2s ease infinite alternate;
+  --moz-animation: glow 2s ease infinite alternate;
+  animation: glow 2s ease infinite alternate;
+  
+}
+@keyframes glow{
+  from{
+    box-shadow:0 0 100px 2px var(--main-color);
+
+  }
+  to{
+    box-shadow:none;
+  }
+}
+
+@media(max-width: 480px){
+  .project-container{
+  display:flex;
+  flex-direction:column-reverse;
+   
+  }
+  .project img{
+    max-width:100%;
+  }
+}
+
+@media(max-width: 895px){
+  .project-container{
+  display:flex;
+  flex-direction:column-reverse;
+   
+  }
+  .project img{
+    max-width:100%;
+  }
+}
+/* fim Projetos */
+
 /* contact section */
 .contact form {
   max-width: 70rem;
