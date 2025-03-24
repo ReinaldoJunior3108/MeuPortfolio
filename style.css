@@ -25,6 +25,7 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
   width: 100%;
+  pointer-events:none;
 }
 }
 html::-webkit-scrollbar {
