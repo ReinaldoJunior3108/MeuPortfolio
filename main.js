@@ -11,3 +11,6 @@ ScrollReveal().reveal(".pfp, .container-servicos, .contact form", {
 });
 ScrollReveal().reveal(".content-home h1, .education", { origin: "left" });
 ScrollReveal().reveal(".content-home p", { origin: "right" });
+ScrollReveal().reveal(".projetos", {
+  origin: "top",
+});
