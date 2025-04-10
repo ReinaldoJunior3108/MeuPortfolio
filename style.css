@@ -414,7 +414,7 @@ span {
   font-size: 1.89rem;
   text-align: center;
   font-weight: 600;
-  font-family: "Font Awesome\ 5 Free" ;
+  font-family: "Font Awesome 5 Free";
   color: #393159;
 }
 .education .left {
@@ -512,11 +512,13 @@ span {
   animation: glow 2s ease infinite alternate;
   
 }
-.nlw a{
-  display:inline flex;
+.nlw{
+  margin-bottom: 100px;
+}
+.githublink a{
+  display:inline-flex;
   justify-content:center;
   align-items:center;
-  font-family: "Poppins", sans-serif;
   font-size:6rem;
   color:white;
   background:transparent;
@@ -525,33 +527,28 @@ span {
   
   
 }
-.nlw a:hover{
-  color: var(--main-color);
-  transform: scale(1.03) translateY(-2px);
-  box-shadow:0 0 25px #ffffff;
-  border:0.2rem solid #ffffff;
-}
-
-/* .social-icon a {
-  display: inline flex;
+.vercel {
+  border-radius: 50%;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
-  width: 4rem;
-  font-size: 2rem;
-  background: transparent;
-  border: 0.2rem solid var(--main-color);
-  border-radius: 50%;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
-  transition: 0.3s ease;
+  font-size: 6rem;
+  padding: 1rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 2rem;
 }
-.social-icon a:hover {
-  color: #000;
-  transform: scale(1.3) translateY(-5px);
-  background: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color);
-} */
+.vercel svg {
+  fill: white;
+  transition: all 0.5s ease;
+  transform: translateY(-3px);
+}
+.vercel:hover {
+  background: #ffffff;
+}
+.vercel:hover svg {
+  fill: #000000;
+}
 @keyframes glow{
   from{
     box-shadow:0 0 25px var(--main-color);
