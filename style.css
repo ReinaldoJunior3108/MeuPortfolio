@@ -13,7 +13,7 @@
   --bg-color: #000;
   --secondary: #161616;
   --text-color: #ffffff;
-  --main-color: #a2d2ff;
+  --main-color: #338599;
 }
 html {
   font-size: 62.5%;
@@ -287,7 +287,7 @@ span {
   gap: 2.5rem;
 }
 .boxservices {
-  background: var(--main-color);
+  border: 1px solid var(--main-color);
   height: 290px;
   border-radius: 3rem;
   cursor: pointer;
@@ -296,10 +296,7 @@ span {
   margin-top: 50%;
 }
 .boxservices:hover {
-  background: white;
-  color: var(--main-color);
-  transform: scale(1.03);
-  border: 1px solid var(--main-color);
+  box-shadow: #338599 0px 0px 25px;
 }
 .boxservices .infoservices {
   display: flex;
@@ -428,7 +425,7 @@ span {
   left: -16px;
 }
 .education .content {
-  background: var(--main-color);
+  border: 1px solid #338599;
   position: relative;
   border-radius: 6px;
 }
@@ -717,3 +714,17 @@ span {
   color: white;
 }
   
+.tecnologias{
+  display: flex;
+  gap:1rem;
+}
+.tecnologias span{
+  font-size: 1.5rem;
+  border-top: 1px solid #242020;
+  border-left: 1px solid #242020;
+  border-bottom:1px solid #595760;
+  border-right: 1px solid #595760;
+}
+#rpgui{
+  color: yellow;
+}
