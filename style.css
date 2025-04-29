@@ -19,6 +19,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   width: 100%;
+}
 body {
   background: var(--bg-color);
   font-family: "Poppins", sans-serif;
@@ -26,7 +27,7 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
-}
+
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -163,10 +164,11 @@ span {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--bg-color);
+  box-shadow: inset 0 0 15px var(--main-color);
   border-radius: 4rem;
   font-size: 1.6rem;
   color: var(--main-color);
-  border: 2px solid var(--main-color);
+  border: 1px solid var(--main-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.3s ease;
@@ -179,7 +181,7 @@ span {
   transition: opacity 0.5s ease, transform 0.5s ease;
   position: fixed;
   bottom: 0px;
-  right: 0px;
+  right: -7rem;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -205,8 +207,6 @@ span {
   color: var(--main-color);
 }
 
-
-
 @media (max-width: 1000px) {
   .inicio {
     gap: 4rem;
@@ -231,7 +231,7 @@ span {
 /* serviços */
 .servicos {
   background: var(--bg-color);
-  padding:0 5rem;
+  padding: 0 5rem;
 }
 .container-servicos {
   display: grid;
@@ -280,11 +280,9 @@ span {
   .servicos {
     padding-bottom: 7rem;
   }
-  .boxservices{
-    margin-top:initial;
-
+  .boxservices {
+    margin-top: initial;
   }
-   
 }
 @media (max-width: 895px) {
   .servicos h2 {
@@ -300,28 +298,24 @@ span {
   .infoservices p {
     font-size: 15px;
   }
-  .boxservices{
-    margin-top:initial;
+  .boxservices {
+    margin-top: initial;
   }
-  
 }
-@media (max-width: 480px){
-  .container-servicos{
+@media (max-width: 480px) {
+  .container-servicos {
     display: flex;
     flex-direction: column;
-    
   }
-  .infoservices h4{
+  .infoservices h4 {
     font-size: 3rem;
   }
-  .infoservices p{
+  .infoservices p {
     font-size: 2rem;
   }
-  .boxservices{
-    margin-top:initial;
+  .boxservices {
+    margin-top: initial;
   }
-
-  
 }
 /* educacão */
 .education {
@@ -380,6 +374,7 @@ span {
 }
 .education .content {
   border: 1px solid #338599;
+  box-shadow: inset 0 0 25px var(--main-color);
   position: relative;
   border-radius: 6px;
 }
@@ -432,51 +427,48 @@ span {
   .education .right {
     left: 0%;
   }
-  .education h2{
-    position:relative;
-    z-index:1000;
+  .education h2 {
+    position: relative;
+    z-index: 1000;
   }
 }
 /* Projetos */
 
-.project-container{
+.project-container {
   padding: 3rem;
   display: flex;
-  justify-content:center;
-  gap:100px;
-  
+  justify-content: center;
+  gap: 100px;
 }
-.project{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.nlw p{
+.nlw p {
   font-size: 1.8rem;
   margin-bottom: 30px;
 }
-.project img, video{
-  max-width:500px;
-  border-radius:15px;
+.project img,
+video {
+  max-width: 500px;
+  border-radius: 15px;
   --webkit-animation: glow 2s ease infinite alternate;
   --moz-animation: glow 2s ease infinite alternate;
   animation: glow 2s ease infinite alternate;
-  
 }
-.nlw{
+.nlw {
   margin-bottom: 100px;
 }
-.githublink a{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  font-size:6rem;
-  color:white;
-  background:transparent;
+.githublink a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: white;
+  background: transparent;
   transition: all 0.5s ease;
-  border-radius:50%;
-  
-  
+  border-radius: 50%;
 }
 .vercel {
   border-radius: 50%;
@@ -500,35 +492,34 @@ span {
 .vercel:hover svg {
   fill: #000000;
 }
-@keyframes glow{
-  from{
-    box-shadow:0 0 25px var(--main-color);
-
+@keyframes glow {
+  from {
+    box-shadow: 0 0 25px var(--main-color);
   }
-  to{
-    box-shadow:none;
-  }
-}
-
-@media(max-width: 480px){
-  .project-container{
-  display:flex;
-  flex-direction:column-reverse;
-   
-  }
-  .project img, video{
-    max-width:100%;
+  to {
+    box-shadow: none;
   }
 }
 
-@media(max-width: 895px){
-  .project-container{
-  display:flex;
-  flex-direction:column-reverse;
-   
+@media (max-width: 480px) {
+  .project-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .project img, video{
-    max-width:100%;
+  .project img,
+  video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 895px) {
+  .project-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .project img,
+  video {
+    max-width: 100%;
   }
 }
 /* fim Projetos */
@@ -641,16 +632,15 @@ span {
   }
 }
 /* Obrigado */
-.obrigado{
+.obrigado {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100dvh;
-
 }
-.obrigado h2{
+.obrigado h2 {
   margin-bottom: 3rem;
 }
 .obrigado a {
@@ -663,54 +653,55 @@ span {
   border-radius: 5px;
   cursor: pointer;
 }
-.obrigado a:hover{
+.obrigado a:hover {
   background: var(--main-color);
   color: white;
 }
-  
-.tecnologias{
+
+.tecnologias {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
 }
-.tecnologias span{
+.tecnologias span {
   font-size: 1.5rem;
   border-top: 1px solid #242020;
   border-left: 1px solid #242020;
-  border-bottom:1px solid #595760;
+  border-bottom: 1px solid #595760;
   border-right: 1px solid #595760;
 }
-#rpgui{
+#rpgui {
   color: yellow;
 }
-.container__skills{
+.container__skills {
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   height: 90vh;
   gap: 5rem;
 }
-.container__skills h2{
+.container__skills h2 {
   font-size: 3rem;
-  
-  
 }
-table{
+@media screen and (min-width: 1360px) {
+  .container__skills {
+    align-items: center;
+  }
+}
+
+table {
   width: 60%;
   border-collapse: collapse;
 }
-table td:nth-child(1){
-  width:35%;
+table td:nth-child(1) {
+  width: 35%;
   font-size: 2rem;
   font-weight: bold;
 }
-.line__skill{
+.line__skill {
   position: absolute;
   border-bottom: 2px solid;
   border-style: dotted;
-  border-image-source: linear-gradient(to right, #000 , var(--main-color));
+  border-image-source: linear-gradient(to right, #000, var(--main-color));
   border-image-slice: 1;
-  
 }
