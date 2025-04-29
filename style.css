@@ -184,74 +184,10 @@ span {
 }
 .digitando span {
   position: relative;
-}
-.digitando span::before {
-  content: "Frontend Developer";
   color: var(--main-color);
-  animation: words 20s infinite;
 }
-.digitando span::after {
-  content: "";
-  background: var(--bg-color);
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 3px solid var(--bg-color);
-  right: -8;
-  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-@keyframes cursor {
-  to {
-    border-left: 3px solid var(--main-color);
-  }
-}
-@keyframes words {
-  0%,
-  20% {
-    content: "Frontend Developer";
-  }
-  21%,
-  40% {
-    content: "Backend Developer";
-  }
-  41%,
-  60% {
-    content: "Freelancer";
-  }
-  61%,
-  80% {
-    content: "Tecnico Apple;
-  }
-  81%,
-  100% {
-    content: "Full Stack Developer";
-  }
-}
-@keyframes typing {
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
-}
+
+
 
 @media (max-width: 1000px) {
   .inicio {
@@ -727,4 +663,36 @@ span {
 }
 #rpgui{
   color: yellow;
+}
+.container__skills{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 5rem;
+}
+.container__skills h2{
+  font-size: 3rem;
+  
+  
+}
+table{
+  width: 60%;
+  border-collapse: collapse;
+}
+table td:nth-child(1){
+  width:35%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.line__skill{
+  position: absolute;
+  border-bottom: 2px solid;
+  border-style: dotted;
+  border-image-source: linear-gradient(to right, #000 , var(--main-color));
+  border-image-slice: 1;
+  
 }
