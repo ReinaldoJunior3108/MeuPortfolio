@@ -16,7 +16,7 @@ ScrollReveal().reveal(".projetos", {
 });
 window.addEventListener("scroll", function () {
   const btn = document.getElementById("actionBtn");
-  const scrollPoint = 800; // altura (em px) onde o botão vira fixo
+  const scrollPoint = 700; // altura (em px) onde o botão vira fixo
 
   if (window.scrollY > scrollPoint) {
     btn.classList.add("fixed-btn");

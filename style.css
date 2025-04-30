@@ -702,6 +702,6 @@ table td:nth-child(1) {
   position: absolute;
   border-bottom: 2px solid;
   border-style: dotted;
-  border-image-source: linear-gradient(to right, #000, var(--main-color));
+  border-image-source: linear-gradient(to right, #33859900, var(--main-color));
   border-image-slice: 1;
 }
