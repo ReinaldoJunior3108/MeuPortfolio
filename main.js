@@ -1,21 +1,6 @@
-/*================== scroll reveal ========================*/
-ScrollReveal({
-  distance: "70px",
-  duration: 3000,
-  delay: 20,
-});
-
-ScrollReveal().reveal(".content-home, heading", { origin: "top" });
-ScrollReveal().reveal(".pfp, .container-servicos, .contact form", {
-  origin: "buttom",
-});
-ScrollReveal().reveal(".content-home h1, .education", { origin: "left" });
-ScrollReveal().reveal(".content-home p", { origin: "right" });
-ScrollReveal().reveal(".projetos", {
-  origin: "top",
-});
+const btn = document.getElementById("actionBtn");
 window.addEventListener("scroll", function () {
-  const btn = document.getElementById("actionBtn");
+  
   const scrollPoint = 700; // altura (em px) onde o botão vira fixo
 
   if (window.scrollY > scrollPoint) {
@@ -24,3 +9,24 @@ window.addEventListener("scroll", function () {
     btn.classList.remove("fixed-btn");
   }
 });
+
+
+const toggleButton = document.querySelector('.toggle__lang');
+const en = document.querySelector('.en')
+const pt = document.querySelector('.pt')
+function btnText(){
+  if (pt.classList.contains('active')){
+    console.log('ta ativo')
+    btn.textContent = 'Baixar CV'
+  } else {
+    btn.textContent = 'Download CV'
+  }
+}
+toggleButton.addEventListener('click', () => {
+  en.classList.toggle('active')
+  pt.classList.toggle('active')
+  toggleButton.classList.toggle('ptbr')
+  btnText()
+});
+
+

@@ -79,6 +79,9 @@ html::-webkit-scrollbar-thumb {
   #menu-icon {
     display: block;
   }
+  .header{
+    position: absolute;
+  }
   .navbar {
     position: absolute;
     top: 100%;
@@ -704,4 +707,38 @@ table td:nth-child(1) {
   border-style: dotted;
   border-image-source: linear-gradient(to right, #33859900, var(--main-color));
   border-image-slice: 1;
+}
+.toggle__lang{
+  position: fixed;
+  z-index: 999;
+  right: 2rem;
+  top: 1.5rem;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  background: url("./assets/img/english.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+.toggle__lang.ptbr{
+  background: url("./assets/img/brasil.png");
+  background-size: 100% 100%;
+}
+.pt{
+  display: none;
+  visibility: hidden;
+}
+.pt.active{
+  display: initial;
+  visibility: initial;
+}
+.en{
+  display: none;
+  visibility: hidden;
+}
+.en.active{
+  display: initial;
+  visibility: initial;
 }
