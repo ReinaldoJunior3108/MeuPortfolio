@@ -672,7 +672,7 @@ video {
   border-bottom: 1px solid #595760;
   border-right: 1px solid #595760;
 }
-#rpgui {
+.rpgui {
   color: yellow;
 }
 .container__skills {

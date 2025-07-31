@@ -63,7 +63,7 @@
         <nav class="navbar">
           <a href="#inicio" class="active">Inicio</a>
           <a href="#servicos">Habilidades</a>
-          <a href="#education">Educação</a>
+          <a href="#educacao">Educação</a>
           <a href="#projetos">Projetos</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -215,7 +215,7 @@
         </div>
       </section>
       <!-- Educação -->
-      <section class="education" id="education">
+      <section class="education" id="educacao">
         <h2 class="heading">Educação</h2>
         <div class="timeline">
           <div class="container left">
@@ -329,7 +329,7 @@
               <p style="margin-bottom: 0">
                 Portfolio inspirado em Jogos RPG antigos, utilizando a
                 biblioteca
-                <a id="rpgui" href="https://ronenness.github.io/RPGUI/"
+                <a class="rpgui" href="https://ronenness.github.io/RPGUI/"
                   >RPGUI</a
                 >
               </p>
@@ -508,16 +508,16 @@
       <header class="header">
         <a href="#" class="logo">About me.</a>
         <nav class="navbar">
-          <a href="#inicio" class="active">Home</a>
-          <a href="#servicos">Skills</a>
+          <a href="#home" class="active">Home</a>
+          <a href="#services">Skills</a>
           <a href="#education">Education</a>
-          <a href="#projetos">Projects</a>
-          <a href="#contato">Get in touch</a>
+          <a href="#projects">Projects</a>
+          <a href="#getintouch">Get in touch</a>
         </nav>
         
       </header>
       <!-- Inicio -->
-      <section class="inicio" id="inicio">
+      <section class="inicio" id="home">
         <div class="pfp">
           <img src="./assets/img/pfp.png" alt="" />
         </div>
@@ -556,7 +556,7 @@
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
-          <a href="#contato" class="btn"> Get in Touch</a>
+          <a href="#getintouch" class="btn"> Get in Touch</a>
           <a
             href="./assets/Reinaldo Junior Curriculum.pdf"
             download
@@ -567,7 +567,7 @@
         </div>
       </section>
       <!-- Serviços -->
-      <section class="servicos" id="servicos">
+      <section class="servicos" id="services">
         <h2 class="heading">Skills</h2>
         <div class="container__skills">
           <table>
@@ -710,7 +710,7 @@
       </section>
       <!-- Projetos -->
 
-      <section class="projetos" id="projetos">
+      <section class="projetos" id="projects">
         <h2 class="heading">My Projects</h2>
         <div class="project-container">
           <div class="project">
@@ -773,7 +773,7 @@
             <div>
               <p style="margin-bottom: 0">
                 Portfolio inspired by old-school RPG games, using the
-                <a id="rpgui" href="https://ronenness.github.io/RPGUI/"
+                <a class="rpgui" href="https://ronenness.github.io/RPGUI/"
                   >RPGUI</a
                 > library
               </p>
@@ -858,7 +858,7 @@
 
       <!-- contato -->
 
-      <section class="contact" id="contato">
+      <section class="contact" id="getintouch">
         <h2 class="heading">Get in Touch</h2>
 
         <form
@@ -933,11 +933,11 @@
           ></a>
         </div>
         <ul class="list">
-          <li><a href="#inicio">Home</a></li>
-          <li><a href="#servicos">Skills</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#projetos">Projects</a></li>
-          <li><a href="#contato">Get In Touch</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#getintouch">Get In Touch</a></li>
         </ul>
       </footer>
     </div>
@@ -952,10 +952,6 @@
 
     // Reinsere o "+" apenas no início
     valor = "+" + valor;
-
-    // Formatação básica: +CC (DDD) Número
-    // Exemplo: +55 (11) 91234-5678
-    valor = valor.replace(/^(\+\d{1,3})(\d{2})(\d{4,5})(\d{4})$/, "$1 ($2) $3-$4");
 
     input.value = valor;
   }
